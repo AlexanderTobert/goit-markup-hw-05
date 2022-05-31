@@ -443,12 +443,60 @@ body {
 }
 
 .jobs .example {
+  position: relative;
   margin-right: 30px;
   display: block;
 }
 
 .jobs .example:last-child {
   margin-right: 0;
+}
+
+.jobs-thumb {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  /* display: block;
+  color: orange;
+  width: 370px;
+  height: 294px;
+  bottom: 0;
+  right: 0; */
+}
+
+.jobs-thumb::before {
+  content: '';
+  position: absolute;
+  overflow: hidden;
+
+  bottom: 0;
+
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.jobs-action {
+  position: absolute;
+  content: '';
+
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+
+  text-transform: uppercase;
+}
+
+.jobs-text {
+  margin: 0;
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  padding: 27px 0;
 }
 
 /* team */
